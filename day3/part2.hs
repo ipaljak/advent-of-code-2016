@@ -15,4 +15,3 @@ countTriangles (a:b:c:xs)
 
 main :: IO ()
 main = getContents >>= print . sum . map countTriangles . transpose . map words . lines 
-

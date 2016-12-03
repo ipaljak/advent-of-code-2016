@@ -11,4 +11,3 @@ countTriangles = length . filter isTriangle
 
 main :: IO ()
 main = getContents >>= print . countTriangles . map words . lines 
-
